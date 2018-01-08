@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>            
+            body {
+                background-color: #EFE9D1;
+                margin: 0;
+            }
+            #topHeartDiv {
+                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
+            }
+            #topHeart {
+                width: 3%;
+            }
+            #bicycleDiv {
+                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
+            }  
+            #menuDiv {
+                display: none;
+            }
+            #menuSwitch {
+                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            #menuSwitch:hover {
+                background-color: burlywood;
+            }
+
+            #menuContent {
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
+            }
+            #spaceForMenu {
+                background-color: #EFE9D1;
+                height: 140px;
+                display: none;
+            }
+            #placeHolder {
+                width: 100%; height: 100px;background-color: #EFE9D1; 
+            }
+            #navbarDiv {
+                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
+            } 
+          
+            #theNavbar {
+                display: block;
+            }
+            .navbar {
+                width: 520px; margin: 0 auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
+            }
+            a {
+                margin: 5px 12px; color: #231F20; text-decoration: none;
+            }
+            a:hover {
+                color: #B1987C; opacity: 70%;
+            }
+            #body .gifts {
+                color: #B1987C !important;
+            }
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%
+            }
+            .dropdown {
+                position: relative;
+                float: left;
+                padding-top: 4px;
+                white-space: nowrap;
+            }
+             #chinese1 {
+                position: relative;
+                float: left;
+                padding-top: 3.5px;
+            }
+            .chinese {
+                font-size: 11.5px;
+            }
+            .dropdown-content {
+                padding-left: 3px;
+                display: none;
+                z-index: 1;
+                background-color: #EFE9D1;
+                position: relative;
+                left: 5px; top: 10px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a:hover {
+                text-decoration: underline;
+            }
+
+            .textSection {
+                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px;
+            }
+            .textSection h3 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            .textSection h4 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            #metStory, #datingStory {
+                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto; text-align: justify; padding-bottom: 50px;
+            }
+            .heartSmall {
+                height: 25px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .heartLarge {
+                height: 55px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .linkButton {
+                background-color: whitesmoke; border: 1px solid black; margin: 5px; padding: 10px; border-radius: 5%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            .linkButtonP { padding: 20px;}
+            #ending {
+                padding: 40px 0 5px 0; font-size: 12px;
+            }
+            #weddingVenue, #localAcc, #travel, #thingsToDo {
+                padding-top: 150px; margin-top: -100px;
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto;
+            }
+            .longText {
+                text-align: justify;
+            }
+            
+            #photoTitles {
+                text-align: center;
+            }
+            #thumbNailDiv {
+                display: block;
+                text-align: center;
+            }
+            
+            #thumbNailDiv img {
+                display: block;
+                width: 100%;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+           
+            
+        </style>
+    </head>
+    
+    <body id="body">
+        
+        <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
+        </div>
+        <div id="bicycleDiv"><img src="images/bicycle.png" alt="a tandem bicycle" height="auto" width="25%"> 
+        </div>
+        <div id="placeHolder">
+            <div id="navbarDiv">
+                <div id=menuDiv>
+                    <a href="javascript:toggleMenu();" id="menuSwitch">Menu</a>
+                    <div id="menuContent">
+                       <p ><a href="index.html">OUR WEDDING</a> </p>
+                        <P><a href="details.html" class="details">DETAILS</a></P>
+                        <P><a href="photos.html"class="photos">PHOTOS</a></P>
+                        <P><a href="gifts.html" class="gifts">GIFTS</a></P>
+                        <P><a href="parthenon.html" class="rsvp">RSVP</a></P>
+                        <P class="chinese"><a href="giftsChinese.html">中文版</a></P>
+                    </div>
+                </div>
+                <div class="navbar" id="theNavbar">
+                    <div class="dropdown" style="width: 125px;">
+                        <a href="index.html" class="home">OUR WEDDING</a>
+                        <div class="dropdown-content">
+                            <p><a href="index.html#ourStory" class="home">OUR STORY</a></p>
+                            <p><a href="index.html#theWedding" class="home">THE WEDDING</a></p>
+                            <p><a href="index.html#weddingParty" class="home">WEDDING PARTY</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="details.html" class="details">DETAILS</a>
+                        <div class="dropdown-content">
+                            <p><a href="details.html#weddingVenue" class="details">WEDDING VENUE</a></p>
+                            <p><a href="details.html#localAcc" class="details">LOCAL ACCOMMODATION</a></p>
+                            <p><a href="details.html#travel" class="details">TRAVEL AND TRANSPORTTION</a></p>
+                            <p><a href="details.html#thingsToDo" class="details">THINGS TO DO</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="Photos.html" class="photos">PHOTOS</a>
+                        <div class="dropdown-content">
+                            <p><a href="KeyYubingPhotos.html" class="photos">KEN AND YUBING</a></p>
+                            <p><a href="WrestParkPhotos.html" class="photos">WREST PARK</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 70px;">
+                       <a href="gifts.html" class="gifts">GIFTS</a>
+                    </div>
+                    <div class="dropdown" style="width: 70px;">
+                        <a href="parthenon.html" class="rsvp">RSVP</a>
+                    </div>
+                    <div id="chinese1" style="width: 70px;">
+                        <a href="giftsChinese.html" class="chinese">中文版</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="spaceForMenu"></div>
+        
+        <div class="textSection">
+            <img src="images/heart.png" class="heartSmall">
+            <div class="longTextDiv">
+                <p>We are not having a gift list as your attendance on our big day is absolutely more than enough for us - we already feel so thankful that our family and friends from far and wide can share in our celebration!</p>
+                <p>If however you would like to give us a present, could we suggest a small donation to our honeymoon fund? In the Chinese culture, it is traditional to give money in red packets at a wedding - but absolutely no pressure to do so :-)</p>
+            </div>
+            
+            <img src="images/heart.png" class="heartSmall">
+            
+        </div>
+
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbarDiv");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        
+         
+        <script type="text/javascript">
+            var theNavbar = document.getElementById("theNavbar");
+            var menuDiv = document.getElementById("menuDiv");
+            var menuContent = document.getElementById("menuContent");
+            var spaceForMenu = document.getElementById("spaceForMenu");
+            function navbarResize() {
+                if (window.innerWidth < 768) { 
+                    
+                    theNavbar.style.display="none";
+                    menuDiv.style.display="block";
+                    spaceForMenu.style.display="none";
+                    menuContent.style.display="none";
+                    } else {
+                        
+                        theNavbar.style.display="block";
+                        menuDiv.style.display="none";
+                        menuContent.style.display="none";
+                        spaceForMenu.style.display="none";
+                       
+                    }
+            }
+            navbarResize();
+            window.addEventListener("resize", function(event){
+                navbarResize(); saveSpace();
+            });
+        </script>
+            
+        <script language="javascript"> 
+            function toggleMenu() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if(menuContent.style.display == "block") {
+                    menuContent.style.display = "none"; 
+                    spaceForMenu.style.display = "none";
+                }
+                else {
+                    menuContent.style.display = "block";
+                    spaceForMenu.style.display = "block";
+                }
+            } 
+            function saveSpace() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if (menuContent.style.display == "block") {
+                    spaceForMenu.style.display = "block";
+                } else {
+                    spaceForMenu.style.display = "none";
+                }
+            }
+            saveSpace();
+        </script>
+            
+         
+        
+      
+        
+    </body>
+</html>
+
