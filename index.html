@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>wedding of yubing-zhu-and-kenneth-chun-kin-ko-aug-2018</title>
-        <style>
+        <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <style>            
             body {
                 background-color: #EFE9D1;
                 margin: 0;
                 padding-top: 5px;
-                height: 2000px;
             }
             #bicycleDiv {
                 display: flex; align-items: center; justify-content: center; 
@@ -15,28 +14,26 @@
             #manuDiv {
                 display: none;
             }
-            #manu {
-                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1.5px; 
+            #manuSwitch {
+                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
             }
-            #manu:hover {
-                background-color: blanchedalmond;
+            #manuSwitch:hover {
+                background-color: burlywood;
             }
-            #manu:checked {
-                background-color: aqua;
-            }
+
             #manuContent {
-                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: block;
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none;
             }
             #spaceForManu {
                 background-color: #EFE9D1;
-                height: 129px;
+                height: 140px;
                 display: none;
             }
             #placeHolder {
                 width: 100%; height: 100px;background-color: #EFE9D1; 
             }
             #navbarDiv {
-                width: 100%; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding-bottom: 15px;
+                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding-bottom: 15px;
             } 
           
             #theNavbar {
@@ -67,7 +64,7 @@
              #chinese1 {
                 position: relative;
                 float: left;
-                padding-top: 2.2px;
+                padding-top: 2.5px;
             }
             .chinese {
                 font-size: 11.5px;
@@ -98,15 +95,41 @@
             #countDownDiv {
                 font-size: 12px; font-family: sans-serif; margin: 30 auto; padding: 10px; text-align: center;
             }
+            .textSection {
+                text-align: center; padding: 5px 40px; line-height: 25px; font-family: "Times New Roman", Georgia, Serif; font-size:16px;
+            }
+            .textSection h3 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            #metStory, #datingStory {
+                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto;
+            }
+            .heartSmall {
+                height: 25px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .heartLarge {
+                height: 55px; margin-top: 30px; margin-bottom: 40px;
+            }
+            #rsvp {
+                background-color: whitesmoke; border: 1px solid black; margin: 30px; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            #rsvpP { padding: 20px;}
+            #ending {
+                padding: 40px 0 5px 0; font-size: 12px;
+            }
         </style>
     </head>
     <body id="home">
+        
         <div id="bicycleDiv"><img src="images/bicycleWithHeart.png" alt="a tandem bicycle" height="auto" width="18%"> 
         </div>
         <div id="placeHolder">
             <div id="navbarDiv">
                 <div id=manuDiv>
-                    <div id="manu">Manu</div>
+                    <a href="javascript:toggleManu();" id="manuSwitch">Manu</a>
                     <div id="manuContent">
                         <p class="home">OUR WEDDING</p>
                         <P><a href="#">DETAILS</a></P>
@@ -161,13 +184,45 @@
             <div id="datePlaceDiv">WEDDING<span id="separator"> &bull; </span>AUGUST 18, 2018<span id="separator"> &bull; </span>WREST PARK, BEDFORDSHIRE</div>
             <div id="countDownDiv"><span id="countDown"></span> days to go!</div>      
         </div>
-        
-        <script type="text/javascript">
-            var manuCheched = document.getElementById("#manu:checked");
-            var manuContent = document.getElementById("#manuContent");
-        
-        </script>
+        <div class="textSection">
+            <h3>OUR STORY</h3>
+            <h3>HOW WE MET</h3>
+            <div class="longTextDiv"><p class="longText" id="metStory">Yubing and Ken met at a bike shop on the Tsinghua University campus in Beijing on a sunny day in October 2011. Yubing was with a girlfriend and Ken was with some guy friends. They all got chatting. That's when Yubing and Ken discovered their similarities...</p></div>
+            <img src="images/heart.png" class="heartSmall">
+            <h3>FIRST DATE(S)</h3>
+            <div class="longTextDiv"><P class="longText" id="datingStory">Let's just say, first date No. 1 was not a resounding success. Not only was Yubing 2 hours late but she didn't even realise it was a date :P so smooth operator Ken quickly shifted gears and moved the "date" location from a cute café to a local bar and grabbed a couple of friends so when Yubing arrived, he was casually playing pool, not even noticing she was late (!). First date No. 2 went much better. Having told Yubing he knew all the best places to go out (even on a Tuesday) Yubing called his bluff and suggested they go out (on Tuesday). As a man who always delivers, Ken rounded up the troops and they had an epic night out on the times - shapes were made in Coco Banana! Many karaoke sessions and many more meals later, the love birds flew back to London...</P></div>
+            <img src="images/heart.png" class="heartSmall">
+            <h3>THE PROPOSAL</h3>
+            <img src="images/heart.png" class="heartLarge">
+            <h3>THE WEDDING</h3>
+            <p>Saturday, August 18, 2018</p>
+            <p>11:00 AM</p>
+            <p>Attire: Summer Smart</p>
+            <p id="rsvpP"><a href="#" id="rsvp">RSVP</a></p>
+            <img src="images/heart.png" class="heartSmall">
+            <h3>CEREMONY AND RECEPTION</h3>
+            <P>Wrest Park, United Kindom</P>
+            <P>Bedfordshire, Silsoe MK45 4HR, United Kindom</P>
+            <img src="images/heart.png" class="heartSmall">
+            <P>11 a.m. Start for family and wedding party</P>
+            <P>Door Games</P>
+            <P>Chinese Tea Ceremony</P>
+            <P>1 p.m. Start for Day Guests</P>
+            <P>Civil Ceremony</P>
+            <PDrinks Reception & PhotographsP>
+            <P>Wedding Breakfast & Speeches</P>
+            <P>6pm Start for Evening Guests</P>
+            <P>Cutting the Cake, Father-Daughter Dance and First Dance</P>
+            <P>Ceilidh and Pizza Van</P>
+            <P>11:30 p.m. Carriages</P>
+            <img src="images/heart.png" class="heartLarge">
+            <h3>WEDDING PARTY</h3>
+            <P>Lucy Yuying Zhu - Maid of Honor</P>
+            <img src="images/heart.png" class="heartSmall">
+            <p id="ending">Created by Ray Zhu at White House Farm, Debenham Road, Suffolk, UK</p>
+        </div>
 
+        
         <script type="text/javascript">
             var coverPhotoDiv = document.getElementById("coverPhotoDiv");
             var theNavbar = document.getElementById("theNavbar");
@@ -234,6 +289,32 @@
               }
             }
         </script>
+        
+         <script language="javascript"> 
+            function toggleManu() {
+                var manuContent = document.getElementById("manuContent");
+                var spaceForManu = document.getElementById("spaceForManu");
+                if(manuContent.style.display == "block") {
+                    manuContent.style.display = "none"; 
+                    spaceForManu.style.display = "none";
+                }
+                else {
+                    manuContent.style.display = "block";
+                    spaceForManu.style.display = "block";
+                }
+            } 
+            function saveSpace() {
+                var manuContent = document.getElementById("manuContent");
+                var spaceForManu = document.getElementById("spaceForManu");
+                if (manuContent.style.display == "block") {
+                    spaceForManu.style.display = "block";
+                } else {
+                    spaceForManu.style.display = "none";
+                }
+            }
+            saveSpace();
+        </script>
+        
     </body>
 </html>
 
