@@ -2,29 +2,36 @@
 <html>
     <head>
         <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>            
             body {
                 background-color: #EFE9D1;
                 margin: 0;
-                padding-top: 5px;
+            }
+            #topHeartDiv {
+                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
+            }
+            #topHeart {
+                width: 3%;
             }
             #bicycleDiv {
-                display: flex; align-items: center; justify-content: center; 
+                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
             }  
-            #manuDiv {
+            #menuDiv {
                 display: none;
             }
-            #manuSwitch {
+            #menuSwitch {
                 background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
             }
-            #manuSwitch:hover {
+            #menuSwitch:hover {
                 background-color: burlywood;
             }
 
-            #manuContent {
-                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none;
+            #menuContent {
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
             }
-            #spaceForManu {
+            #spaceForMenu {
                 background-color: #EFE9D1;
                 height: 140px;
                 display: none;
@@ -33,14 +40,14 @@
                 width: 100%; height: 100px;background-color: #EFE9D1; 
             }
             #navbarDiv {
-                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding-bottom: 15px;
+                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
             } 
           
             #theNavbar {
                 display: block;
             }
             .navbar {
-                width: 550px; margin: 40px auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
+                width: 520px; margin: 0 auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
             }
             a {
                 margin: 5px 12px; color: #231F20; text-decoration: none;
@@ -60,11 +67,12 @@
                 position: relative;
                 float: left;
                 padding-top: 4px;
+                white-space: nowrap;
             }
              #chinese1 {
                 position: relative;
                 float: left;
-                padding-top: 2.5px;
+                padding-top: 3.5px;
             }
             .chinese {
                 font-size: 11.5px;
@@ -74,6 +82,8 @@
                 display: none;
                 z-index: 1;
                 background-color: #EFE9D1;
+                position: relative;
+                left: 5px; top: 10px;
             }
             .dropdown:hover .dropdown-content {
                 display: block;
@@ -84,7 +94,7 @@
            
            
             #coverPhotoDiv {
-                width: 98%; height: auto; background-color: white; margin: 0 auto; padding: 1%; 
+                width: 100%; height: auto; background-color: white; margin: 0 auto; padding: 1%; 
             }
             #brideBridegroomNameDiv {
                 font-size: 37px; color: #B1987C; margin: 30px auto 15px auto; text-align: center;
@@ -95,10 +105,16 @@
             #countDownDiv {
                 font-size: 12px; font-family: sans-serif; margin: 30 auto; padding: 10px; text-align: center;
             }
+            #textSectionDiv{
+               
+            }
             .textSection {
-                text-align: center; padding: 5px 40px; line-height: 25px; font-family: "Times New Roman", Georgia, Serif; font-size:16px;
+                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px; padding-top: 100px;
             }
             .textSection h3 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            .textSection h4 {
                 color: #B1987C; padding-top: 10px; 
             }
             #metStory, #datingStory {
@@ -108,10 +124,10 @@
                 max-width: 600px; margin: 0 auto;
             }
             .heartSmall {
-                height: 25px; margin-top: 30px; margin-bottom: 40px;
+                height: 22px; margin-top: 30px; margin-bottom: 40px;
             }
             .heartLarge {
-                height: 55px; margin-top: 30px; margin-bottom: 40px;
+                height: 48px; margin-top: 30px; margin-bottom: 40px;
             }
             #rsvp {
                 background-color: whitesmoke; border: 1px solid black; margin: 30px; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
@@ -120,87 +136,93 @@
             #ending {
                 padding: 40px 0 5px 0; font-size: 12px;
             }
+            #ourStory, #theWedding, #weddingParty {
+                padding-top: 150px; margin-top: -100px;
+            }
         </style>
     </head>
+    
     <body id="home">
         
-        <div id="bicycleDiv"><img src="images/bicycleWithHeart.png" alt="a tandem bicycle" height="auto" width="18%"> 
+        <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
+        </div>
+        <div id="bicycleDiv"><img src="images/bicycle.png" alt="a tandem bicycle" height="auto" width="25%"> 
         </div>
         <div id="placeHolder">
             <div id="navbarDiv">
-                <div id=manuDiv>
-                    <a href="javascript:toggleManu();" id="manuSwitch">Manu</a>
-                    <div id="manuContent">
+                <div id=menuDiv>
+                    <a href="javascript:toggleMenu();" id="menuSwitch">Menu</a>
+                    <div id="menuContent">
                         <p class="home">OUR WEDDING</p>
-                        <P><a href="#">DETAILS</a></P>
-                        <P><a href="#">PHOTOS</a></P>
-                        <P><a href="#">GIFTS</a></P>
-                        <P><a href="#">RSVP</a></P>
-                        <P class="chinese"><a href="#">中文版</a></P>
+                        <P><a href="details.html">DETAILS</a></P>
+                        <P><a href="photos.html">PHOTOS</a></P>
+                        <P><a href="gifts.html">GIFTS</a></P>
+                        <P><a href="parthenon.html">RSVP</a></P>
+                        <P class="chinese"><a href="indexChinese.html">中文版</a></P>
                     </div>
                 </div>
                 <div class="navbar" id="theNavbar">
-                    <div class="dropdown">
+                    <div class="dropdown" style="width: 125px;">
                         <a href="index.html" class="home">OUR WEDDING</a>
                         <div class="dropdown-content">
-                            <p><a href="#" class="home">Link 1</a></p>
-                            <p><a href="#" class="home">Link 2</a></p>
-                            <p><a href="#" class="home">Link 3</a></p>
+                            <p><a href="#ourStory" class="home">OUR STORY</a></p>
+                            <p><a href="#theWedding" class="home">THE WEDDING</a></p>
+                            <p><a href="#weddingParty" class="home">WEDDING PARTY</a></p>
                         </div>
                     </div>
-                    <div class="dropdown">
-                        <a href="" class="details">DETAILS</a>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="details.html" class="details">DETAILS</a>
                         <div class="dropdown-content">
-                            <p><a href="#" class="details">Link 1</a></p>
-                            <p><a href="#" class="details">Link 2</a></p>
-                            <p><a href="#" class="details">Link 3</a></p>
+                            <p><a href="details.html#weddingVenue" class="details">WEDDING VENUE</a></p>
+                            <p><a href="details.html#localAcc" class="details">LOCAL ACCOMMODATION</a></p>
+                            <p><a href="details.html#travel" class="details">TRAVEL AND TRANSPORTTION</a></p>
+                            <p><a href="details.html#thingsToDo" class="details">THINGS TO DO</a></p>
                         </div>
                     </div>
-                    <div class="dropdown">
-                        <a href="Photos.html" class="photos">PHOTOS</a>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="photos.html" class="photos">PHOTOS</a>
                         <div class="dropdown-content">
-                            <p><a href="#" class="photos">Link 1</a></p>
-                            <p><a href="#" class="photos">Link 2</a></p>
-                            <p><a href="#" class="photos">Link 3</a></p>
+                            <p><a href="KeyYubingPhotos.html" class="photos">KEN AND YUBING</a></p>
+                            <p><a href="WrestParkPhotos.html" class="photos">WREST PARK</a></p>
                         </div>
                     </div>
-                    <div class="dropdown">
-                        <a href="" class="gifts">GIFTS</a>
+                    <div class="dropdown" style="width: 70px;">
+                       <a href="gifts.html" class="gifts">GIFTS</a>
                     </div>
-                    <div class="dropdown">
-                        <a href="" class="rsvp">RSVP</a>
+                    <div class="dropdown" style="width: 70px;">
+                        <a href="parthenon.html" class="rsvp">RSVP</a>
                     </div>
-                    <div id="chinese1">
-                        <a href="" class="chinese">中文版</a>
+                    <div id="chinese1" style="width: 70px;">
+                        <a href="indexChinese.html" class="chinese">中文版</a>
                     </div>
                     
                 </div>
             </div>
         </div>
-        <div id="spaceForManu"></div>
+        <div id="spaceForMenu"></div>
         <div id=coverPhotoDiv>
             <img id="coverPhoto" src="images/kenYubingJumping.jpg" width="100%">
             <div id="brideBridegroomNameDiv">YUBING AND KENNETH</div>
             <div id="datePlaceDiv">WEDDING<span id="separator"> &bull; </span>AUGUST 18, 2018<span id="separator"> &bull; </span>WREST PARK, BEDFORDSHIRE</div>
             <div id="countDownDiv"><span id="countDown"></span> days to go!</div>      
         </div>
-        <div class="textSection">
-            <h3>OUR STORY</h3>
-            <h3>HOW WE MET</h3>
+        <div id="textSectionDiv" class="textSection">
+            <h3 id="ourStory" style="padding-top: 100px;">OUR STORY</h3>
+            <h4>HOW WE MET</h4>
             <div class="longTextDiv"><p class="longText" id="metStory">Yubing and Ken met at a bike shop on the Tsinghua University campus in Beijing on a sunny day in October 2011. Yubing was with a girlfriend and Ken was with some guy friends. They all got chatting. That's when Yubing and Ken discovered their similarities...</p></div>
             <img src="images/heart.png" class="heartSmall">
-            <h3>FIRST DATE(S)</h3>
+            <h4>FIRST DATE(S)</h4>
             <div class="longTextDiv"><P class="longText" id="datingStory">Let's just say, first date No. 1 was not a resounding success. Not only was Yubing 2 hours late but she didn't even realise it was a date :P so smooth operator Ken quickly shifted gears and moved the "date" location from a cute café to a local bar and grabbed a couple of friends so when Yubing arrived, he was casually playing pool, not even noticing she was late (!). First date No. 2 went much better. Having told Yubing he knew all the best places to go out (even on a Tuesday) Yubing called his bluff and suggested they go out (on Tuesday). As a man who always delivers, Ken rounded up the troops and they had an epic night out on the times - shapes were made in Coco Banana! Many karaoke sessions and many more meals later, the love birds flew back to London...</P></div>
             <img src="images/heart.png" class="heartSmall">
-            <h3>THE PROPOSAL</h3>
-            <img src="images/heart.png" class="heartLarge">
-            <h3>THE WEDDING</h3>
+            <h4 >THE PROPOSAL</h4>
+            <img src="images/heart.png" class="heartLarge" >
+            <h3 id="theWedding">THE WEDDING</h3>
             <p>Saturday, August 18, 2018</p>
             <p>11:00 AM</p>
             <p>Attire: Summer Smart</p>
             <p id="rsvpP"><a href="#" id="rsvp">RSVP</a></p>
             <img src="images/heart.png" class="heartSmall">
-            <h3>CEREMONY AND RECEPTION</h3>
+            <h4>CEREMONY AND RECEPTION</h4>
             <P>Wrest Park, United Kindom</P>
             <P>Bedfordshire, Silsoe MK45 4HR, United Kindom</P>
             <img src="images/heart.png" class="heartSmall">
@@ -209,37 +231,53 @@
             <P>Chinese Tea Ceremony</P>
             <P>1 p.m. Start for Day Guests</P>
             <P>Civil Ceremony</P>
-            <PDrinks Reception & PhotographsP>
+            <P>Drinks Reception & Photographs</P>
             <P>Wedding Breakfast & Speeches</P>
             <P>6pm Start for Evening Guests</P>
             <P>Cutting the Cake, Father-Daughter Dance and First Dance</P>
-            <P>Ceilidh and Pizza Van</P>
-            <P>11:30 p.m. Carriages</P>
+            <P >Ceilidh and Pizza Van</P>
+            <P >11:30 p.m. Carriages</P>
             <img src="images/heart.png" class="heartLarge">
-            <h3>WEDDING PARTY</h3>
+            <h3 id="weddingParty">WEDDING PARTY</h3>
             <P>Lucy Yuying Zhu - Maid of Honor</P>
             <img src="images/heart.png" class="heartSmall">
-            <p id="ending">Created by Ray Zhu at White House Farm, Debenham Road, Suffolk, UK</p>
+         
         </div>
 
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbarDiv");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
         
+         
         <script type="text/javascript">
             var coverPhotoDiv = document.getElementById("coverPhotoDiv");
             var theNavbar = document.getElementById("theNavbar");
-            var manuDiv = document.getElementById("manuDiv");
-            var spaceForManu = document.getElementById("spaceForManu");
+            var menuDiv = document.getElementById("menuDiv");
+            var menuContent = document.getElementById("menuContent");
+            var spaceForMenu = document.getElementById("spaceForMenu");
             function photoResize() {
                 if (window.innerWidth < 768) { 
                     coverPhotoDiv.style.padding = "1%";
                     coverPhotoDiv.style.width = "98%";
                     theNavbar.style.display="none";
-                    manuDiv.style.display="block";
-                    spaceForManu.style.display="block";
+                    menuDiv.style.display="block";
+                    spaceForMenu.style.display="none";
+                    menuContent.style.display="none";
                     } else {
                         coverPhotoDiv.style.padding = "1.3%";
                         theNavbar.style.display="block";
-                        manuDiv.style.display="none";
-                        spaceForManu.style.display="none";
+                        menuDiv.style.display="none";
+                        menuContent.style.display="none";
+                        spaceForMenu.style.display="none";
                         if(window.innerWidth <1200) {
                         coverPhotoDiv.style.width = "84%";
                         } else {
@@ -249,9 +287,36 @@
             }
             photoResize();
             window.addEventListener("resize", function(event){
-                photoResize();
+                photoResize(); saveSpace();
             });
-//countdown
+        </script>
+            
+        <script language="javascript"> 
+            function toggleMenu() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if(menuContent.style.display == "block") {
+                    menuContent.style.display = "none"; 
+                    spaceForMenu.style.display = "none";
+                }
+                else {
+                    menuContent.style.display = "block";
+                    spaceForMenu.style.display = "block";
+                }
+            } 
+            function saveSpace() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if (menuContent.style.display == "block") {
+                    spaceForMenu.style.display = "block";
+                } else {
+                    spaceForMenu.style.display = "none";
+                }
+            }
+            saveSpace();
+        </script>
+            
+        <script type="text/javascript">
             // Set the date we're counting down to
             var countDownDate = new Date("Aug 19, 2018 1:00:00").getTime();
             // Update the count down every 1 second
@@ -277,43 +342,7 @@
             }, 1000);
         </script>  
         
-        <script type="text/javascript">
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbarDiv");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-              if (window.pageYOffset >= sticky+65.9) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-        
-         <script language="javascript"> 
-            function toggleManu() {
-                var manuContent = document.getElementById("manuContent");
-                var spaceForManu = document.getElementById("spaceForManu");
-                if(manuContent.style.display == "block") {
-                    manuContent.style.display = "none"; 
-                    spaceForManu.style.display = "none";
-                }
-                else {
-                    manuContent.style.display = "block";
-                    spaceForManu.style.display = "block";
-                }
-            } 
-            function saveSpace() {
-                var manuContent = document.getElementById("manuContent");
-                var spaceForManu = document.getElementById("spaceForManu");
-                if (manuContent.style.display == "block") {
-                    spaceForManu.style.display = "block";
-                } else {
-                    spaceForManu.style.display = "none";
-                }
-            }
-            saveSpace();
-        </script>
+      
         
     </body>
 </html>
