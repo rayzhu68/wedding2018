@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wedding of yubing-zhu-and-kenneth-chun-kin-ko-aug-2018</title>
+        <style>
+            body {
+                background-color: #EFE9D1;
+                margin: 0;
+                padding-top: 5px;
+                height: 2000px;
+            }
+            #bicycleDiv {
+                display: flex; align-items: center; justify-content: center; 
+            }  
+            #placeHolder {
+                width: 100%; height: 100px;background-color: #EFE9D1; 
+            }
+            #navbarDiv {
+                width: 100%; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding-bottom: 15px;
+            } 
+            #manuDiv {
+                display: none;
+            }
+            #theNavbar {
+                display: block;
+            }
+            .navbar {
+                width: 550px; margin: 40px auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
+            }
+            .navbar a {
+                margin: 5px 12px; color: #231F20; text-decoration: none;
+            }
+            a:hover {
+                color: #B1987C; opacity: 70%;
+            }
+            #home .home {
+                color: #B1987C;
+            }
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%
+            }
+            .dropdown {
+                position: relative;
+                float: left;
+                padding-top: 2px;
+            }
+            .dropdown-content {
+                padding-left: 10px;
+                display: none;
+                z-index: 1;
+                background-color: #EFE9D1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a:hover {
+                text-decoration: underline;
+            }
+            #chinese {
+                padding-top:  0;
+            }
+            #coverPhotoDiv {
+                width: 98%; height: auto; background-color: white; margin: 0 auto; padding: 1%;
+            }
+            #brideBridegroomNameDiv {
+                font-size: 37px; color: #B1987C; margin: 30px auto 15px auto; text-align: center;
+            }
+            #datePlaceDiv {
+                font-size: 12px; font-family: sans-serif; margin: 20 auto; text-align: center;
+            }
+            #countDownDiv {
+                font-size: 12px; font-family: sans-serif; margin: 30 auto; padding: 10px; text-align: center;
+            }
+        </style>
+    </head>
+    <body id="home">
+        <div id="bicycleDiv"><img src="images/bicycleWithHeart.png" alt="a tandem bicycle" height="auto" width="18%"> 
+        </div>
+        <div id="placeHolder">
+            <div id="navbarDiv">
+                <div id=manuDiv>
+                    <button>Manu</button>
+                </div>
+                <div class="navbar" id="theNavbar">
+                    <div class="dropdown">
+                        <a href="index.html" class="home">OUR WEDDING</a>
+                        <div class="dropdown-content">
+                            <p><a href="#" class="home">Link 1</a></p>
+                            <p><a href="#" class="home">Link 2</a></p>
+                            <p><a href="#" class="home">Link 3</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="" class="details">DETAILS</a>
+                        <div class="dropdown-content">
+                            <p><a href="#" class="details">Link 1</a></p>
+                            <p><a href="#" class="details">Link 2</a></p>
+                            <p><a href="#" class="details">Link 3</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="Photos.html" class="photos">PHOTOS</a>
+                        <div class="dropdown-content">
+                            <p><a href="#" class="photos">Link 1</a></p>
+                            <p><a href="#" class="photos">Link 2</a></p>
+                            <p><a href="#" class="photos">Link 3</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="" class="gifts">GIFTS</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="" class="rsvp">RSVP</a>
+                    </div>
+                    <div class="dropdown" id="chinese">
+                        <a href="">中文版</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id=coverPhotoDiv>
+            <img id="coverPhoto" src="images/kenYubingJumping.jpg" width="100%">
+            <div id="brideBridegroomNameDiv">YUBING AND KENNETH</div>
+            <div id="datePlaceDiv">WEDDING<span id="separator"> &bull; </span>AUGUST 18, 2018<span id="separator"> &bull; </span>WREST PARK, BEDFORDSHIRE</div>
+            <div id="countDownDiv"><span id="countDown"></span> days to go!</div>      
+        </div>
+
+        <script type="text/javascript">
+            var coverPhotoDiv = document.getElementById("coverPhotoDiv");
+            var theNavbar = document.getElementById("theNavbar");
+            var manuDiv = document.getElementById("manuDiv");
+            function photoResize() {
+                if (window.innerWidth < 768) { 
+                    coverPhotoDiv.style.padding = "1%";
+                    coverPhotoDiv.style.width = "98%";
+                    theNavbar.style.display="none";
+                    manuDiv.style.display="block";
+                    } else {
+                        coverPhotoDiv.style.padding = "1.3%";
+                        theNavbar.style.display="block";
+                        manuDiv.style.display="none";
+                        if(window.innerWidth <1200) {
+                        coverPhotoDiv.style.width = "84%";
+                        } else {
+                        coverPhotoDiv.style.width = "67.5%";
+                        }
+                    }
+            }
+            photoResize();
+            window.addEventListener("resize", function(event){
+                photoResize();
+            });
+//countdown
+            // Set the date we're counting down to
+            var countDownDate = new Date("Aug 19, 2018 1:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+              // Get todays date and time
+              var now = new Date().getTime();
+              // Find the distance between now an the count down date
+              var distance = countDownDate - now;
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              // Display the result in the element with id="demo"
+              //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              //+ minutes + "m " + seconds + "s ";
+                document.getElementById("countDown").innerHTML = days;
+              // If the count down is finished, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "After wedding, forever wonderful and happy";
+              }
+            }, 1000);
+        </script>  
+        
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbarDiv");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+              if (window.pageYOffset >= sticky+65.9) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
+</html>
+
