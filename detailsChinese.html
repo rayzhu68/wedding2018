@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>            
+            body {
+                background-color: #EFE9D1;
+                margin: 0;
+            }
+            #topHeartDiv {
+                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
+            }
+            #topHeart {
+                width: 3%;
+            }
+            #bicycleDiv {
+                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
+            }  
+            #menuDiv {
+                display: none;
+            }
+            #menuSwitch {
+                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            #menuSwitch:hover {
+                background-color: burlywood;
+            }
+
+            #menuContent {
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
+            }
+            #spaceForMenu {
+                background-color: #EFE9D1;
+                height: 140px;
+                display: none;
+            }
+            #placeHolder {
+                width: 100%; height: 100px;background-color: #EFE9D1; 
+            }
+            #navbarDiv {
+                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
+            } 
+          
+            #theNavbar {
+                display: block;
+            }
+            .navbar {
+                width: 520px; margin: 0 auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
+            }
+            a {
+                margin: 5px 12px; color: #231F20; text-decoration: none;
+            }
+            a:hover {
+                color: #B1987C; opacity: 70%;
+            }
+            #body .details {
+                color: #B1987C !important;
+            }
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%
+            }
+            .dropdown {
+                position: relative;
+                float: left;
+                padding-top: 4px;
+                white-space: nowrap;
+            }
+             #chinese1 {
+                position: relative;
+                float: left;
+                padding-top: 7px;
+            }
+            .chinese {
+                font-size: 11.5px;
+            }
+            .dropdown-content {
+                padding-left: 3px;
+                display: none;
+                z-index: 1;
+                background-color: #EFE9D1;
+                position: relative;
+                left: 5px; top: 10px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a:hover {
+                text-decoration: underline;
+            }
+           
+           
+
+            .textSection {
+                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px;
+            }
+            .textSection h3 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            .textSection h4 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            #metStory, #datingStory {
+                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto;
+            }
+            .heartSmall {
+                height: 22px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .heartLarge {
+                height: 48px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .linkButton {
+                background-color: whitesmoke; border: 1px solid black; margin: 5px; padding: 10px; border-radius: 5%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            .linkButtonP { padding: 20px;}
+            #ending {
+                padding: 40px 0 5px 0; font-size: 12px;
+            }
+            #weddingVenue, #localAcc, #travel, #thingsToDo {
+                padding-top: 150px; margin-top: -100px;
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto;
+            }
+            .longText {
+                text-align: justify;
+            }
+            
+            #EnglishTab {
+                padding-top: 12px;
+            }
+            
+        </style>
+    </head>
+    
+    <body id="body">
+        
+        <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
+        </div>
+        <div id="bicycleDiv"><img src="images/bicycle.png" alt="a tandem bicycle" height="auto" width="25%"> 
+        </div>
+        <div id="placeHolder">
+            <div id="navbarDiv">
+                <div id=menuDiv>
+                    <a href="javascript:toggleMenu();" id="menuSwitch">目录</a>
+                    <div id="menuContent">
+                        <p class="home"><a href="indexChinese.html">婚礼</a></p>
+                        <P><a href="detailsChinese.html" class="details">信息</a></P>
+                        <P><a href="photosChinese.html">相册</a></P>
+                        <P><a href="giftsChinese.html">礼物</a></P>
+                        <P><a href="parthenon.html">邀请</a></P>
+                        <P><a href="details.html" >English</a></P>
+                    </div>
+                </div>
+                <div class="navbar" id="theNavbar">
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="indexChinese.html" class="home">婚礼</a>
+                        <div class="dropdown-content">
+                            <p><a href="indexChinese.html#ourStory" class="home">我们的故事</a></p>
+                            <p><a href="indexChinese.html#theWedding" class="home">婚庆典礼</a></p>
+                            <p><a href="indexChinese.html#weddingParty" class="home">婚庆派对</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="detailsChinese.html" class="details">信息</a>
+                        <div class="dropdown-content">
+                            <p><a href="#weddingVenue" class="details">婚礼地点</a></p>
+                            <p><a href="#localAcc" class="details">附近旅馆</a></p>
+                            <p><a href="#travel" class="details">公交信息</a></p>
+                            <p><a href="#thingsToDo" class="details">可选活动</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="photosChinese.html" class="photos">相册</a>
+                        <div class="dropdown-content">
+                            <p><a href="KenYubingPhotoChinese.html" class="photos">新人</a></p>
+                            <p><a href="WrestParkPhotosChinese.html" class="photos">婚礼地点</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                       <a href="giftsChinese.html" class="gifts">礼物</a>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="parthenon.html" class="rsvp">邀请</a>
+                    </div>
+                    <div id="chinese1" style="width: 80px;">
+                        <a href="details.html" class="chinese">English</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="spaceForMenu"></div>
+        
+        <div id=coverPhotoDiv>
+        </div>
+        
+        <div class="textSection">
+            <h3 id="weddingVenue">婚礼地点</h3>
+            <H4>莱斯特公园</H4>
+            <P>英国，贝德福德郡，希尔索镇，邮编：MK45 4HR。</P><P>英文地址：WREST PARK, Silsoe, Bedfordshire, MK45 4HR, United Kindom</P>
+            <div class="longTextDiv">
+                <P class="longText">莱斯特公园位于伦敦北方30英里，在剑桥和牛津连线的中心点上。她是“英国遗产”中隐藏的瑰宝，始建于十四世纪，经过六百年的沧桑和陆续的建设发展与修缮。主建筑群镶嵌在九十二英亩的园林之中，点缀着许多雕塑和风景建筑。这座园林展现了三百年来英国园林设计的脉络和演变。2017年，她获得“英国花季”金奖（Anglia in Bloom) 。</P>
+                <p class="longText">
+                婚礼入场和典礼在北方主建筑大厅进行。婚宴将向南穿过花坛和草坪，在西侧的花房中进行。晚会将在图书馆和长廊举行。
+                </p>
+            </div>
+            <p class="linkButtonP"><a href="http://www.english-heritage.org.uk/visit/places/wrest-park/" class="linkButton">公园网站</a></p>
+            <img src="images/heart.png" class="heartLarge" >
+            <h3 id="localAcc">附近旅馆</h3>
+            <H4>希特琴镇，波特米尔巷，普瑞米尔酒店</H4>
+            <P>普瑞米尔酒店地址：Premier Inn, Portmill Lane, Hitchin, United Kingdom</P>
+            <p>电话：0871 527 9578</p>
+            <p>这是一个相对便宜的选择。距离婚礼地点莱斯特公园20-25分钟计程车车程。</p>
+            <p class="linkButtonP"><a href="https://www.premierinn.com/gb/en/hotels/england/hertfordshire/hitchin/hitchin-town-centre.html?cid=GLBC_HITTOW" class="linkButton">酒店网站</a></p>
+            <img src="images/heart.png" class="heartSmall">
+            <h4>飞行员酒店</h4>
+            <p>地址：THE AIRMAN HOTEL, 16 Hitchin Rd, Meppershall, Shefford SG17 5JF, UK</p>
+            <p>电话：01462 850853</p>
+            <p>是一家三星级小酒店，12分钟车程。</p>
+            <p class="linkButtonP"><a href="http://theairmanhotel.com/" class="linkButton">酒店网站</a><a href="mailto: reception@theairmanhotel.com" class="linkButton">Email</a></p>
+            <img src="images/heart.png" class="heartSmall" >
+            <h4>公牛酒店</h4>
+            <p>地址：The Bull Hotel, 77 Bedford Road, Barton-le-Clay, United Kingdom</p>
+            <p>电话：01582 882 888</p>
+            <p>这是一家B&B，即住宿加早餐小旅店。位于一个叫巴顿<span id="separator"> &bull; </span>勒<span id="separator"> &bull; </span>克蕾（Barton-le-Clay）的村庄。十分钟车程。</p>
+            <p class="linkButtonP"><a href="http://www.thebullbarton.com/" class="linkButton">酒店网站</a><a href="mailto:Events@thebullbarton.com" class="linkButton">Email</a></p>
+            <img src="images/heart.png" class="heartLarge" >
+            <h3 id="travel">公交信息</h3>
+            <h4>伦敦维多利亚汽车站（VICTORIA COACH STATION）</h4>
+            <p>地址：164 Buckingham Palace Rd, Belgravia, London SW1W 9TP, UK</p>
+            <img src="images/heart.png" class="heartLarge" >
+            <h3 id=thingsToDo>可选活动</h3>
+            <h4>游览莱斯特公园</h4>
+            <p class="linkButtonP"><a href="http://www.english-heritage.org.uk/visit/places/wrest-park/" class="linkButton">公园网站</a></p>
+            <img src="images/heart.png" class="heartSmall">
+            
+        </div>
+
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbarDiv");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        
+         
+        <script type="text/javascript">
+            var coverPhotoDiv = document.getElementById("coverPhotoDiv");
+            var theNavbar = document.getElementById("theNavbar");
+            var menuDiv = document.getElementById("menuDiv");
+            var menuContent = document.getElementById("menuContent");
+            var spaceForMenu = document.getElementById("spaceForMenu");
+            function photoResize() {
+                if (window.innerWidth < 768) { 
+                    coverPhotoDiv.style.padding = "1%";
+                    coverPhotoDiv.style.width = "98%";
+                    theNavbar.style.display="none";
+                    menuDiv.style.display="block";
+                    spaceForMenu.style.display="none";
+                    menuContent.style.display="none";
+                    } else {
+                        coverPhotoDiv.style.padding = "1.3%";
+                        theNavbar.style.display="block";
+                        menuDiv.style.display="none";
+                        menuContent.style.display="none";
+                        spaceForMenu.style.display="none";
+                        if(window.innerWidth <1200) {
+                        coverPhotoDiv.style.width = "84%";
+                        } else {
+                        coverPhotoDiv.style.width = "67.5%";
+                        }
+                    }
+            }
+            photoResize();
+            window.addEventListener("resize", function(event){
+                photoResize(); saveSpace();
+            });
+        </script>
+            
+        <script language="javascript"> 
+            function toggleMenu() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if(menuContent.style.display == "block") {
+                    menuContent.style.display = "none"; 
+                    spaceForMenu.style.display = "none";
+                }
+                else {
+                    menuContent.style.display = "block";
+                    spaceForMenu.style.display = "block";
+                }
+            } 
+            function saveSpace() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if (menuContent.style.display == "block") {
+                    spaceForMenu.style.display = "block";
+                } else {
+                    spaceForMenu.style.display = "none";
+                }
+            }
+            saveSpace();
+        </script>
+            
+        
+        
+      
+        
+    </body>
+</html>

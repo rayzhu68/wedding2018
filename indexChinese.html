@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>            
+            body {
+                background-color: #EFE9D1;
+                margin: 0;
+            }
+            #topHeartDiv {
+                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
+            }
+            #topHeart {
+                width: 3%;
+            }
+            #bicycleDiv {
+                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
+            }  
+            #menuDiv {
+                display: none;
+            }
+            #menuSwitch {
+                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            #menuSwitch:hover {
+                background-color: burlywood;
+            }
+
+            #menuContent {
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
+            }
+            #spaceForMenu {
+                background-color: #EFE9D1;
+                height: 180px;
+                display: none;
+            }
+            #placeHolder {
+                width: 100%; height: 100px;background-color: #EFE9D1; 
+            }
+            #navbarDiv {
+                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
+            } 
+          
+            #theNavbar {
+                display: block;
+            }
+            .navbar {
+                width: 520px; margin: 0 auto; font-size: 15px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
+            }
+            a {
+                margin: 5px 12px; color: #231F20; text-decoration: none;
+            }
+            a:hover {
+                color: #B1987C; opacity: 70%;
+            }
+            #home .home {
+                color: #B1987C !important;
+            }
+            .sticky {
+              position: fixed;
+              top: 0;
+              width: 100%
+            }
+            .dropdown {
+                position: relative;
+                float: left;
+                padding-top: 4px;
+                white-space: nowrap;
+            }
+             #chinese1 {
+                position: relative;
+                float: left;
+                padding-top: 7px;
+            }
+            .chinese {
+                font-size: 14px;
+            }
+            .dropdown-content {
+                padding-left: 3px;
+                display: none;
+                z-index: 1;
+                background-color: #EFE9D1;
+                position: relative;
+                left: 5px; top: 10px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a:hover {
+                text-decoration: underline;
+            }
+           
+           
+            #coverPhotoDiv {
+                width: 98%; height: auto; background-color: white; margin: 0 auto; padding: 1%; 
+            }
+            #brideBridegroomNameDiv {
+                font-size: 37px; color: #B1987C; margin: 30px auto 15px auto; text-align: center;
+            }
+            #datePlaceDiv {
+                font-size: 12px; font-family: sans-serif; margin: 20 auto; text-align: center;
+            }
+            #countDownDiv {
+                font-size: 12px; font-family: sans-serif; margin: 30 auto; padding: 10px; text-align: center;
+            }
+            .textSection {
+                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px; padding-top: 100px;
+            }
+            .textSection h3 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            .textSection h4 {
+                color: #B1987C; padding-top: 10px; 
+            }
+            #metStory, #datingStory {
+                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
+            }
+            .longTextDiv {
+                max-width: 600px; margin: 0 auto;
+            }
+            .heartSmall {
+                height: 22px; margin-top: 30px; margin-bottom: 40px;
+            }
+            .heartLarge {
+                height: 48px; margin-top: 30px; margin-bottom: 40px;
+            }
+            #rsvp {
+                background-color: whitesmoke; border: 1px solid black; margin: 30px; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            }
+            #rsvpP { padding: 20px;}
+            #ending {
+                padding: 40px 0 5px 0; font-size: 12px;
+            }
+            #ourStory, #theWedding, #weddingParty {
+                padding-top: 150px; margin-top: -100px;
+            }
+            .xsmallHeart {
+                width: 15px; border-radius: 50%; border: solid 5px white; padding-top: 5px;
+            }
+        </style>
+    </head>
+    
+    <body id="home">
+        
+        <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
+        </div>
+        <div id="bicycleDiv"><img src="images/bicycle.png" alt="a tandem bicycle" height="auto" width="25%"> 
+        </div>
+        <div id="placeHolder">
+            <div id="navbarDiv">
+                <div id=menuDiv>
+                    <a href="javascript:toggleMenu();" id="menuSwitch">目录</a>
+                    <div id="menuContent">
+                        <p class="home">婚礼</p>
+                        <P><a href="detailsChinese.html">信息</a></P>
+                        <P><a href="photosChinese.html">相册</a></P>
+                        <P><a href="giftsChinese.html">礼物</a></P>
+                        <P><a href="parthenon.html">邀请</a></P>
+                        <P ><a href="index.html" >English</a></P>
+                    </div>
+                </div>
+                <div class="navbar" id="theNavbar">
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="indexChinese.html" class="home">婚礼</a>
+                        <div class="dropdown-content">
+                            <p><a href="indexChinese.html#ourStory" class="home">我们的故事</a></p>
+                            <p><a href="indexChinese.html#theWedding" class="home">婚庆典礼</a></p>
+                            <p><a href="indexChinese.html#weddingParty" class="home">婚礼派对</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="detailsChinese.html" class="details">信息</a>
+                        <div class="dropdown-content">
+                            <p><a href="detailsChinese.html#weddingVenue" class="details">地点</a></p>
+                            <p><a href="detailsChinese.html#localAcc" class="details">附近旅馆</a></p>
+                            <p><a href="detailsChinese.html#travel" class="details">公交信息</a></p>
+                            <p><a href="detailsChinese.html#thingsToDo" class="details">可选活动</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="photosChinese.html" class="photos">相册</a>
+                        <div class="dropdown-content">
+                            <p><a href="KenYubingPhotoChinese.html" class="photos">新人</a></p>
+                            <p><a href="WrestParkPhotosChinese.html" class="photos">婚礼地点</a></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                       <a href="giftsChinese.html" class="gifts">礼物</a>
+                    </div>
+                    <div class="dropdown" style="width: 80px;">
+                        <a href="parthenon.html" class="rsvp">邀请</a>
+                    </div>
+                    <div id="chinese1" style="width: 80px;">
+                        <a href="index.html" class="chinese">English</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="spaceForMenu"></div>
+        <div id=coverPhotoDiv>
+            <img id="coverPhoto" src="images/kenYubingJumping.jpg" width="100%">
+            <div id="brideBridegroomNameDiv">朱昱冰<span id="loveHeart"> <img src="images/roundHeart.png" class="xsmallHeart"> </span>高俊健</div>
+            <div id="datePlaceDiv">婚礼<span id="separator"> &bull; </span>二零一八年八月十八日<span id="separator"> &bull; </span>英国贝德福德郡<span id="separator"> &bull; </span>莱斯特公园</div>
+            <div id="countDownDiv">倒计时：<span id="countDown"></span> 天!</div>      
+        </div>
+        <div class="textSection">
+            <h3 id="ourStory" style="padding-top: 100px;">我们的故事</h3>
+            <h4>相遇和相识</h4>
+            <div class="longTextDiv"><p class="longText" id="metStory">2011年，北京十月的一个星期天，昱冰和俊健在清华校园的一个自行车店偶遇。昱冰和一位女伴，俊健和几个男伙伴。大家一起聊起来。正是这时昱冰和俊健发现彼此的相似之处...</p></div>
+            <img src="images/heart.png" class="heartSmall">
+            <h4>相知和相爱</h4>
+            <div class="longTextDiv"><P class="longText" id="datingStory">其实，第一次约会，算不上一次成功的约会。不仅昱冰晚了两个小时，甚至她还没意识到那是约会，不过，善于应变的俊健立即把约会地点，从咖啡馆转移到酒吧，并抓到两个朋友，一起打起台球来，昱冰到的时候，他正认真地打着台球，看起来像根本没意识到昱冰的迟到！ 第二次约会才是真正的第一次约会。 俊健说他知道北京美食的所有最佳去处（甚至包括星期二晚上），昱冰觉得他在吹牛，挑战他星期二晚上一起到外面吃饭。俊健当仁不让，果然说到做到，开始了史诗般的夜晚 － （不知为什么）变成了椰子香蕉的形状！在好多次的唱歌和晚餐约会之后，这对相爱的鸽子飞回了伦敦...</P></div>
+            <img src="images/heart.png" class="heartSmall">
+            <h4 >相爱到求婚</h4>
+            <img src="images/heart.png" class="heartLarge" >
+            <h3 id="theWedding">婚礼</h3>
+            <p>2018年8月18日星期六</p>
+            <p>上午11:00</p>
+            <p>着装规范: 整齐休闲夏装</p>
+            <p id="rsvpP"><a href="#" id="rsvp">回复邀请信</a></p>
+            <img src="images/heart.png" class="heartSmall">
+            <h4>婚礼接待地址</h4>
+            <P>Wrest Park, United Kindom</P>
+            <P>Bedfordshire, Silsoe MK45 4HR, United Kindom</P>
+            <img src="images/heart.png" class="heartSmall">
+            <h4>婚礼程序</h4>
+            <P>上午11时： 家人婚礼庆典开始</P>
+            <P>门戏</P>
+            <P>敬茶礼</P>
+            <P>下午1时：白天客人开始入场 </P>
+            <P>正式结婚典礼</P>
+            <P>庆祝酒会和摄影</P>
+            <P>婚宴和讲话</P>
+            <P>下午6时：晚间客人开始入场</P>
+            <P>切蛋糕，父女共舞，第一支舞</P>
+            <P >塞利达比萨饼餐车</P>
+            <P >晚上11:30，婚礼轿车送新人</P>
+            <img src="images/heart.png" class="heartLarge">
+            <h3 id="weddingParty">婚礼派对</h3>
+            <P>露西<span id="separator"> &bull; </span>朱昱英 - 首席女傧相</P>
+            <img src="images/heart.png" class="heartSmall">
+            
+        </div>
+
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbarDiv");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        
+         
+        <script type="text/javascript">
+            var coverPhotoDiv = document.getElementById("coverPhotoDiv");
+            var theNavbar = document.getElementById("theNavbar");
+            var menuDiv = document.getElementById("menuDiv");
+            var menuContent = document.getElementById("menuContent");
+            var spaceForMenu = document.getElementById("spaceForMenu");
+            function photoResize() {
+                if (window.innerWidth < 768) { 
+                    coverPhotoDiv.style.padding = "1%";
+                    coverPhotoDiv.style.width = "98%";
+                    theNavbar.style.display="none";
+                    menuDiv.style.display="block";
+                    spaceForMenu.style.display="none";
+                    menuContent.style.display="none";
+                    } else {
+                        coverPhotoDiv.style.padding = "1.3%";
+                        theNavbar.style.display="block";
+                        menuDiv.style.display="none";
+                        menuContent.style.display="none";
+                        spaceForMenu.style.display="none";
+                        if(window.innerWidth <1200) {
+                        coverPhotoDiv.style.width = "84%";
+                        } else {
+                        coverPhotoDiv.style.width = "67.5%";
+                        }
+                    }
+            }
+            photoResize();
+            window.addEventListener("resize", function(event){
+                photoResize(); saveSpace();
+            });
+        </script>
+            
+        <script language="javascript"> 
+            function toggleMenu() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if(menuContent.style.display == "block") {
+                    menuContent.style.display = "none"; 
+                    spaceForMenu.style.display = "none";
+                }
+                else {
+                    menuContent.style.display = "block";
+                    spaceForMenu.style.display = "block";
+                }
+            } 
+            function saveSpace() {
+                var menuContent = document.getElementById("menuContent");
+                var spaceForMenu = document.getElementById("spaceForMenu");
+                if (menuContent.style.display == "block") {
+                    spaceForMenu.style.display = "block";
+                } else {
+                    spaceForMenu.style.display = "none";
+                }
+            }
+            saveSpace();
+        </script>
+            
+        <script type="text/javascript">
+            // Set the date we're counting down to
+            var countDownDate = new Date("Aug 19, 2018 1:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+              // Get todays date and time
+              var now = new Date().getTime();
+              // Find the distance between now an the count down date
+              var distance = countDownDate - now;
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              // Display the result in the element with id="demo"
+              //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              //+ minutes + "m " + seconds + "s ";
+                document.getElementById("countDown").innerHTML = days;
+              // If the count down is finished, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "After wedding, forever wonderful and happy";
+              }
+            }, 1000);
+        </script>  
+        
+      
+        
+    </body>
+</html>
+
