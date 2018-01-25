@@ -14,15 +14,29 @@
             #menuDiv {
                 display: block;
             }
-            #menuSwitch {
-                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
+            label {background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
             }
-            #menuSwitch:hover {
-                background-color: burlywood;
+            label {
+              cursor: pointer;
+            }
+            #menu-toggle {
+              display: none; /* hide the checkbox */
+            }
+            #menu {
+              display: none;
+            }
+            #menu-toggle:checked + #menu {
+              display: block;
             }
 
-            #menuContent {
-                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
+            label:hover {
+                background-color: burlywood;
+            }
+            #menu li {
+                margin-bottom: 10px;
+            }
+            #menu {
+                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px; list-style: none;
             }
             #spaceForMenu {
                 background-color: #EFE9D1;
@@ -105,7 +119,7 @@
            
         
             #coverPhotoDiv {
-                width: 98%; height: auto; background-color: white; margin: 0 auto; padding: 1%; margin-bottom: 100px;
+                width: 98%; height: auto; background-color: white; margin: 0; padding: 1%; margin-bottom: 100px;
             }
             #brideBridegroomNameDiv {
                 font-size: 37px; color: #B1987C; margin: 30px auto 15px auto; text-align: center;
@@ -174,9 +188,11 @@
             
             #thumbNailDiv img {
                 display: block;
-                width: 100%;
+                width: 98%;
                 max-width: 450px;
                 margin: 0 auto;
+                padding: 1%;
+                background-color: white;
             } 
             .english1 {
                 position: relative;
@@ -194,4 +210,4 @@
                 padding: 15px;
                 background-color: white;
             }
-           
+

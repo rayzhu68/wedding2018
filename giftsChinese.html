@@ -20,15 +20,16 @@
         <div id="placeHolder">
             <div id="navbarDiv">
                 <div id=menuDiv>
-                    <a href="javascript:toggleMenu();" id="menuSwitch">目录</a>
-                    <div id="menuContent">
-                        <p class="home"><a href="indexChinese.html"> 婚礼</a></p>
-                        <P><a href="detailsChinese.html">信息</a></P>
-                        <P><a href="photosChinese.html">相册</a></P>
-                        <P><a href="giftsChinese.html" class="gifts">礼物</a></P>
-                        <P><a href="parthenon.html">回复</a></P>
-                        <P ><a href="gifts.html" >English</a></P>
-                    </div>
+                    <label for="menu-toggle">目录</label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <ul id="menu">
+                      <li><a href="indexChinese.html" class="home">婚礼</a></li>
+                      <li><a href="detailsChinese.html" class="details">信息</a></li>
+                      <li><a href="photosChinese.html"class="photos">相册</a></li>
+                      <li><a href="giftsChinese.html" class="gifts">礼物</a></li>
+                      <li><a href="parthenon.html" class="rsvp">回复</a></li>
+                      <li><a href="gifts.html" class="chinese">English</a></li>
+                    </ul>
                 </div>
                 <div class="navbar" id="theNavbar">
                     <div class="dropdown" style="width: 80px;">
