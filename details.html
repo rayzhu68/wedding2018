@@ -4,140 +4,14 @@
         <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (max-width: 550px)" href="mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 551px)" href="desktop.css" />
         <style>            
-            body {
-                background-color: #EFE9D1;
-                margin: 0;
-            }
-            #topHeartDiv {
-                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
-            }
-            #topHeart {
-                width: 3%;
-            }
-            #bicycleDiv {
-                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
-            }  
-            #menuDiv {
-                display: none;
-            }
-            #menuSwitch {
-                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
-            }
-            #menuSwitch:hover {
-                background-color: burlywood;
-            }
-
-            #menuContent {
-                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
-            }
-            #spaceForMenu {
-                background-color: #EFE9D1;
-                height: 140px;
-                display: none;
-            }
-            #placeHolder {
-                width: 100%; height: 100px;background-color: #EFE9D1; 
-            }
-            #navbarDiv {
-                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
-            } 
-          
-            #theNavbar {
-                display: block;
-            }
-            .navbar {
-                width: 520px; margin: 0 auto; font-size: 13px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
-            }
-            a {
-                margin: 5px 12px; color: #231F20; text-decoration: none;
-            }
-            a:hover {
-                color: #B1987C; opacity: 70%;
-            }
-            #body .details {
-                color: #B1987C !important;
-            }
-            .sticky {
-              position: fixed;
-              top: 0;
-              width: 100%
-            }
-            .dropdown {
-                position: relative;
-                float: left;
-                padding-top: 4px;
-                white-space: nowrap;
-            }
-             #chinese1 {
-                position: relative;
-                float: left;
-                padding-top: 2.5px;
-            }
-            .chinese {
-                font-size: 11.5px;
-            }
-            .dropdown-content {
-                padding-left: 3px;
-                display: none;
-                z-index: 1;
-                background-color: #EFE9D1;
-                position: relative;
-                left: 5px; top: 10px;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .dropdown-content a:hover {
-                text-decoration: underline;
-            }
-           
-           
-
-            .textSection {
-                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px;
-            }
-            .textSection h3 {
-                color: #B1987C; padding-top: 10px; 
-            }
-            .textSection h4 {
-                color: #B1987C; padding-top: 10px; 
-            }
-            #metStory, #datingStory {
-                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
-            }
-            .longTextDiv {
-                max-width: 600px; margin: 0 auto;
-            }
-            .heartSmall {
-                height: 22px; margin-top: 30px; margin-bottom: 40px;
-            }
-            .heartLarge {
-                height: 48px; margin-top: 30px; margin-bottom: 40px;
-            }
-            .linkButton {
-                background-color: whitesmoke; border: 1px solid black; margin: 5px; padding: 10px; border-radius: 5%; font-family: sans-serif, serif; letter-spacing: 1px; 
-            }
-            .linkButtonP { padding: 20px;}
-            #ending {
-                padding: 40px 0 5px 0; font-size: 12px;
-            }
-            #weddingVenue, #localAcc, #travel, #thingsToDo {
-                padding-top: 150px; margin-top: -100px;
-            }
-            .longTextDiv {
-                max-width: 600px; margin: 0 auto;
-            }
-            .longText {
-                text-align: justify;
-            }
-            
-            
             
         </style>
     </head>
     
-    <body id="body">
+    <body id="detailbody">
         
         <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
         </div>
@@ -177,7 +51,7 @@
                     <div class="dropdown" style="width: 80px;">
                         <a href="photos.html" class="photos">PHOTOS</a>
                         <div class="dropdown-content">
-                            <p><a href="KeyYubingPhotos.html" class="photos">KEN AND YUBING</a></p>
+                            <p><a href="KenYubingPhotos.html" class="photos">KEN AND YUBING</a></p>
                             <p><a href="WrestParkPhotos.html" class="photos">WREST PARK</a></p>
                         </div>
                     </div>
@@ -201,7 +75,10 @@
             <H4>WREST PARK</H4>
             <P>Silsoe, Bedfordshire, MK45 4HR, United Kindom</P>
             <div class="longTextDiv"><P class="longText">Wrest Park is a gem of English Heritage, framed by three centuries of landscape design and 92 acres of award-winning gardens, the gold winner of Anglia in Bloom Awards 2017, decorated with many archaeological treasures and statues. </P></div>
-            <p class="linkButtonP"><a href="http://www.english-heritage.org.uk/visit/places/wrest-park/" class="linkButton">Visit Website</a></p>
+            <p class="linkButtonP">
+                <a href="http://www.english-heritage.org.uk/visit/places/wrest-park/" class="linkButton">Website</a>
+                <a href="WrestParkPhotos.html" class="linkButton">Photos</a>
+            </p>
             <img src="images/heart.png" class="heartLarge" >
             <h3 id="localAcc">LOCAL ACCOMMODATION</h3>
             <H4>PORTMILL LANE, HITCHIN, UNITED KINGDOM</H4>
@@ -214,13 +91,13 @@
             <p>16 Hitchin Rd, Meppershall, Shefford SG17 5JF, UK</p>
             <p>01462 850853</p>
             <p>A small three star hotel very close to Wrest Park (12 minute taxi ride).</p>
-            <p class="linkButtonP"><a href="http://theairmanhotel.com/" class="linkButton">Visit Website</a><a href="mailto: reception@theairmanhotel.com" class="linkButton">Email</a></p>
+            <p class="linkButtonP"><a href="http://theairmanhotel.com/" class="linkButton">Website</a><a href="mailto: reception@theairmanhotel.com" class="linkButton">Email</a></p>
             <img src="images/heart.png" class="heartSmall" >
             <h4>THE BULL HOTEL</h4>
             <p>77 Bedford Road, Barton-le-Clay, United Kingdom</p>
             <p>01582 882 888</p>
             <p>A B&B in the nearby village of Barton-le-Clay, just 10 minutes drive from Wrest Park.</p>
-            <p class="linkButtonP"><a href="http://www.thebullbarton.com/" class="linkButton">Visit Website</a><a href="mailto:Events@thebullbarton.com" class="linkButton">Email</a></p>
+            <p class="linkButtonP"><a href="http://www.thebullbarton.com/" class="linkButton">Website</a><a href="mailto:Events@thebullbarton.com" class="linkButton">Email</a></p>
             <img src="images/heart.png" class="heartLarge" >
             <h3 id="travel">TRAVEL AND TRANSPORTATION</h3>
             <h4>VICTORIA COACH STATION</h4>
@@ -234,76 +111,7 @@
             
         </div>
 
-        <script type="text/javascript">
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbarDiv");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-        
-         
-        <script type="text/javascript">
-            var theNavbar = document.getElementById("theNavbar");
-            var menuDiv = document.getElementById("menuDiv");
-            var menuContent = document.getElementById("menuContent");
-            var spaceForMenu = document.getElementById("spaceForMenu");
-            function navbarResize() {
-                if (window.innerWidth < 768) { 
-                    
-                    theNavbar.style.display="none";
-                    menuDiv.style.display="block";
-                    spaceForMenu.style.display="none";
-                    menuContent.style.display="none";
-                    } else {
-                        
-                        theNavbar.style.display="block";
-                        menuDiv.style.display="none";
-                        menuContent.style.display="none";
-                        spaceForMenu.style.display="none";
-                       
-                    }
-            }
-            navbarResize();
-            window.addEventListener("resize", function(event){
-                navbarResize(); saveSpace();
-            });
-        </script>
-            
-        <script language="javascript"> 
-            function toggleMenu() {
-                var menuContent = document.getElementById("menuContent");
-                var spaceForMenu = document.getElementById("spaceForMenu");
-                if(menuContent.style.display == "block") {
-                    menuContent.style.display = "none"; 
-                    spaceForMenu.style.display = "none";
-                }
-                else {
-                    menuContent.style.display = "block";
-                    spaceForMenu.style.display = "block";
-                }
-            } 
-            function saveSpace() {
-                var menuContent = document.getElementById("menuContent");
-                var spaceForMenu = document.getElementById("spaceForMenu");
-                if (menuContent.style.display == "block") {
-                    spaceForMenu.style.display = "block";
-                } else {
-                    spaceForMenu.style.display = "none";
-                }
-            }
-            saveSpace();
-        </script>
-            
-        
-       
-        
-      
+        <script src="myScript.js"></script> 
         
     </body>
 </html>

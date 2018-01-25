@@ -1,173 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
+        <title>Wedding of Yubing and Kenneth on Aug 18, 2018</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (max-width: 550px)" href="mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 551px)" href="desktop.css" />
         <style>            
-            body {
-                background-color: #EFE9D1;
-                margin: 0;
-            }
-            #topHeartDiv {
-                margin: 10px auto; display: flex; align-items: center; justify-content: center; margin-top: 25PX; padding-left: 0px;
-            }
-            #topHeart {
-                width: 3%;
-            }
-            #bicycleDiv {
-                display: flex; align-items: center; justify-content: center; margin: 20PX; padding-left: 0px;
-            }  
-            #menuDiv {
-                display: none;
-            }
-            #menuSwitch {
-                background-color: whitesmoke; border: 1px solid black; position: absolute; margin: 1%; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
-            }
-            #menuSwitch:hover {
-                background-color: burlywood;
-            }
-
-            #menuContent {
-                 text-align: center; margin: 0 auto; padding: 8px; border-radius: 12%; font-family: Times New Roman, sans-serif, serif; letter-spacing: 1.5px; font-size: 14px; position: relative; top: 20px; display: none; padding-right: 48px;
-            }
-            #spaceForMenu {
-                background-color: #EFE9D1;
-                height: 180px;
-                display: none;
-            }
-            #placeHolder {
-                width: 100%; height: 100px;background-color: #EFE9D1; 
-            }
-            #navbarDiv {
-                width: 100%; min-height: 40px; overflow: hidden;  opacity: 0.95; filter: alpha(opacity=95); background-color: #EFE9D1; padding: 20px;
-            } 
-          
-            #theNavbar {
-                display: block;
-            }
-            .navbar {
-                width: 520px; margin: 0 auto; font-size: 15px; font-family: Times New Roman, Georgia, sans-serif, serif; letter-spacing: 1.5px; 
-            }
-            a {
-                margin: 5px 12px; color: #231F20; text-decoration: none;
-            }
-            a:hover {
-                color: #B1987C; opacity: 70%;
-            }
-            #home .photos {
-                color: #B1987C !important;
-            }
-            .sticky {
-              position: fixed;
-              top: 0;
-              width: 100%
-            }
-            .dropdown {
-                position: relative;
-                float: left;
-                padding-top: 4px;
-                white-space: nowrap;
-            }
-             #chinese1 {
-                position: relative;
-                float: left;
-                padding-top: 7px;
-            }
-            .chinese {
-                font-size: 14px;
-            }
-            .dropdown-content {
-                padding-left: 3px;
-                display: none;
-                z-index: 1;
-                background-color: #EFE9D1;
-                position: relative;
-                left: 5px; top: 10px;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .dropdown-content a:hover {
-                text-decoration: underline;
-            }
-           
-           
-            #coverPhotoDiv {
-                width: 98%; height: auto; margin: 0 auto; padding: 1%; 
-            }
-            #brideBridegroomNameDiv {
-                font-size: 37px; color: #B1987C; margin: 30px auto 15px auto; text-align: center;
-            }
-            #datePlaceDiv {
-                font-size: 12px; font-family: sans-serif; margin: 20 auto; text-align: center;
-            }
-            #countDownDiv {
-                font-size: 12px; font-family: sans-serif; margin: 30 auto; padding: 10px; text-align: center;
-            }
-            .textSection {
-                text-align: center; padding: 5px 40px; line-height: 28px; font-family: "Times New Roman", Georgia, Serif; font-size:16px; padding-top: 0px;
-            }
-            .textSection h3 {
-                color: #B1987C; padding-top: 10px; 
-            }
-            .textSection h4 {
-                color: #B1987C; padding-top: 10px; 
-            }
-            #metStory, #datingStory {
-                text-align: justify; font-family: "Georgia", sans-serif; font-size: 14px;  
-            }
-            .longTextDiv {
-                max-width: 600px; margin: 0 auto; text-align: justify;
-            }
-            .heartSmall {
-                height: 22px; margin-top: 30px; margin-bottom: 40px;
-            }
-            .heartLarge {
-                height: 48px; margin-top: 30px; margin-bottom: 40px;
-            }
-            #rsvp {
-                background-color: whitesmoke; border: 1px solid black; margin: 30px; padding: 10px; border-radius: 8%; font-family: sans-serif, serif; letter-spacing: 1px; 
-            }
-            #rsvpP { padding: 20px;}
-            #ending {
-                padding: 40px 0 5px 0; font-size: 12px;
-            }
-            #ourStory, #theWedding, #weddingParty {
-                padding-top: 150px; margin-top: -100px;
-            }
-            .xsmallHeart {
-                width: 15px; border-radius: 50%; border: solid 5px white; padding-top: 5px;
-            }
-            #photoTitles {
-                text-align: center;
-            }
-            #thumbNailDiv {
-                display: block;
-                text-align: center;
-            }
+         
             
-            #thumbNailDiv img {
-                display: block;
-                width: 100%;
-                max-width: 450px;
-                margin: 0 auto;
-            }
-            
-            #kenYubingPhotos img {
-                display: block;
-                width: 92%;
-                max-width: 650px;
-                margin: 0 auto;
-                padding: 15px;
-                background-color: white;
-            }
-           
-           
         </style>
     </head>
     
-    <body id="home">
+    <body id="photobody">
         
         <div id="topHeartDiv"><img src="images/heart.png" id ="topHeart"> 
         </div>
@@ -180,9 +25,9 @@
                     <div id="menuContent">
                         <p class="home"><a href="indexChinese.html">婚礼</a></p>
                         <P><a href="detailsChinese.html" class="details">信息</a></P>
-                        <P><a href="photosChinese.html">相册</a></P>
+                        <P><a href="photosChinese.html" class="photos">相册</a></P>
                         <P><a href="giftsChinese.html">礼物</a></P>
-                        <P><a href="parthenon.html">邀请</a></P>
+                        <P><a href="parthenon.html">回复</a></P>
                         <P><a href="details.html" >English</a></P>
                     </div>
                 </div>
@@ -215,7 +60,7 @@
                        <a href="giftsChinese.html" class="gifts">礼物</a>
                     </div>
                     <div class="dropdown" style="width: 80px;">
-                        <a href="parthenon.html" class="rsvp">邀请</a>
+                        <a href="parthenon.html" class="rsvp">回复</a>
                     </div>
                     <div id="chinese1" style="width: 80px;">
                         <a href="index.html" class="chinese">English</a>
@@ -225,125 +70,23 @@
             </div>
         </div>
         <div id="spaceForMenu"></div>
-        
-        <div id=coverPhotoDiv>
-        </div>
-        
         <div class="textSection"><h3 >莱斯特公园相册</h3></div>
-        
-        <div id="kenYubingPhotos">
-            
+        <div id="kenYubingPhotosDiv">
             <div><img src="images/wrestParkFrontView.webp"></div>
             <div><img src="images/wrestParkYubingWalkWithDad.webp"></div>
             <div><img src="images/wrestParkUnderfountainStatue.webp"></div>
             <div><img src="images/wrestParkPondStatue.webp"></div>
             
+
         </div>
 
+        
         <div class="textSection">
-
             <img src="images/heart.png" class="heartSmall">
             
         </div>
 
-        <script type="text/javascript">
-            window.onscroll = function() {myFunction()};
-            var navbar = document.getElementById("navbarDiv");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-        
-        <script type="text/javascript">
-            var coverPhotoDiv = document.getElementById("coverPhotoDiv");
-            var theNavbar = document.getElementById("theNavbar");
-            var menuDiv = document.getElementById("menuDiv");
-            var menuContent = document.getElementById("menuContent");
-            var spaceForMenu = document.getElementById("spaceForMenu");
-            function photoResize() {
-                if (window.innerWidth < 768) { 
-                    coverPhotoDiv.style.padding = "1%";
-                    coverPhotoDiv.style.width = "98%";
-                    theNavbar.style.display="none";
-                    menuDiv.style.display="block";
-                    spaceForMenu.style.display="none";
-                    menuContent.style.display="none";
-                    } else {
-                        coverPhotoDiv.style.padding = "1.3%";
-                        theNavbar.style.display="block";
-                        menuDiv.style.display="none";
-                        menuContent.style.display="none";
-                        spaceForMenu.style.display="none";
-                        if(window.innerWidth <1200) {
-                        coverPhotoDiv.style.width = "84%";
-                        } else {
-                        coverPhotoDiv.style.width = "67.5%";
-                        }
-                    }
-            }
-            photoResize();
-            window.addEventListener("resize", function(event){
-                photoResize(); saveSpace();
-            });
-        </script>
-            
-        <script language="javascript"> 
-            function toggleMenu() {
-                var menuContent = document.getElementById("menuContent");
-                var spaceForMenu = document.getElementById("spaceForMenu");
-                if(menuContent.style.display == "block") {
-                    menuContent.style.display = "none"; 
-                    spaceForMenu.style.display = "none";
-                }
-                else {
-                    menuContent.style.display = "block";
-                    spaceForMenu.style.display = "block";
-                }
-            } 
-            function saveSpace() {
-                var menuContent = document.getElementById("menuContent");
-                var spaceForMenu = document.getElementById("spaceForMenu");
-                if (menuContent.style.display == "block") {
-                    spaceForMenu.style.display = "block";
-                } else {
-                    spaceForMenu.style.display = "none";
-                }
-            }
-            saveSpace();
-        </script>
-            
-        <script type="text/javascript">
-            // Set the date we're counting down to
-            var countDownDate = new Date("Aug 19, 2018 1:00:00").getTime();
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-              // Get todays date and time
-              var now = new Date().getTime();
-              // Find the distance between now an the count down date
-              var distance = countDownDate - now;
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              // Display the result in the element with id="demo"
-              //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-              //+ minutes + "m " + seconds + "s ";
-                document.getElementById("countDown").innerHTML = days;
-              // If the count down is finished, write some text 
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countDown").innerHTML = "After wedding, forever wonderful and happy";
-              }
-            }, 1000);
-        </script>  
-        
-      
+        <script src="myScript.js"></script> 
         
     </body>
 </html>
